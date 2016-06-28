@@ -1,0 +1,147 @@
+/*MAIN*/
+
+body {
+    font-family: 'Arimo', sans-serif;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0;
+}
+ul {
+    padding-left: 0;
+    list-style-type: none;
+}
+
+/*HEADER*/
+
+nav ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+nav ul li {
+    padding: 10px 40px;
+}
+nav ul li a {
+    font-size: 17px;
+    color: #797878;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+nav ul li a:hover {
+    color: #020202;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #020202;
+}
+
+/*MAIN CONTENT*/
+
+.kiev {
+    background: url("/img/001.jpg") no-repeat;
+}
+.lviv {
+    background: url("/img/002.jpg") no-repeat;
+}
+.herson {
+    background: url("/img/003.jpg") no-repeat;
+}
+main ul li {
+    margin-bottom: 10px;
+}
+main ul li a {
+    font-size: 15px;
+    font-style: italic;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #797878;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 900px;
+    height: 256px;
+}
+main ul li a:hover {
+    color: #020202;
+}
+
+/*FOOTER*/
+
+.social-icon {
+    display: flex;
+}
+
+.fb, .google, .vk, .youtube {
+    display: block;
+    width: 36px;
+    height: 36px;
+    background: url("/img/social-sprite.png") no-repeat;
+}
+.fb {
+    background-position: 0 1px;
+}
+.fb:hover {
+    background-position: 0 -72px;
+}
+.google {
+    background-position: -108px 1px;
+}
+.google:hover {
+    background-position: -108px -72px;
+}
+.vk {
+    background-position: -324px 1px;
+}
+.vk:hover {
+    background-position: -324px -72px;
+}
+.youtube {
+    background-position: -360px 1px;
+}
+.youtube:hover {
+    background-position: -360px -72px;
+}
+
+
+.copyright p {
+    text-align: center;
+    color: #797878;
+    font-size: 13px;
+    margin: 0;
+}
+.copyright p a {
+    text-decoration: none;
+}
+.copyright p a:hover {
+    color: #020202;
+}
+
+/*ABOUT MAIN*/
+
+.about {
+    display: flex;
+    flex-flow: row-reverse nowrap;
+}
+.about-img {
+    height: 400px;
+    width: 300px;
+    margin-left: 20px;
+}
+
+/*PHOTO*/
+.photo {
+    max-width: 1000px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.photo img {
+    margin: 20px;
+    height: 25%;
+    width: 25%;
+}
+.photo img:hover {
+    body {
+    
+}
+}
