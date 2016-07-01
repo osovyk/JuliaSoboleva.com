@@ -3,8 +3,7 @@ body {
     font-size: 15px;
     display: flex;
     flex-direction: column;
-    align-items: stretch;
-    margin: 40px 20px;
+    /*align-items: stretch;*/
     min-height: 100vh;
 }
 ul {
@@ -13,7 +12,9 @@ ul {
 }
 
 /*HEADER*/
-
+header {
+    margin: 40px 20px 0;
+}
 
 header a img {
     width: 350px;
@@ -72,14 +73,16 @@ main ul li a {
 }
 
 /*FOOTER*/
-
+footer {
+    margin-bottom: 40px;
+}
 
 .social-icon {
     display: flex;
     justify-content: center;
 }
 
-.fb, .google, .vk, .youtube {
+.fb, .google, .youtube {
     display: block;
     width: 36px;
     height: 36px;
@@ -91,10 +94,6 @@ main ul li a {
 .google {
     background-position: -108px 1px;
 }
-.vk {
-    background-position: -324px 1px;
-}
-
 .youtube {
     background-position: -360px 1px;
 }
@@ -132,7 +131,5 @@ main ul li a {
     justify-content: center;
 }
 .photo img {
-    margin: 20px;
-    height: 25%;
-    width: 25%;
+    margin: 10px;
 }
