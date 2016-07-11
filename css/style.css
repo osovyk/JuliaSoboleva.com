@@ -33,12 +33,14 @@ header a:hover {
   color: #020202;
   border-bottom: 2px solid #020202;
 }
-main {
-  justify-content: center;
-}
 main .content {
-  max-width: 1200px;
-  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .content a img {
+  width: auto;
+  margin-bottom: 5px;
 }
 footer a {
   color: #797878;
