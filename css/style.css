@@ -11,7 +11,7 @@ header nav {
 header nav ul {
   padding-left: 0;
   display: flex;
-  flex-direction: row;
+  flex-flow: row wrap;
   justify-content: center;
 }
 header nav ul li {
@@ -78,6 +78,7 @@ footer a:hover {
   color: #020202;
 }
 footer p {
+  font-size: 13px;
   text-transform: capitalize;
 }
 footer p a.dev {
