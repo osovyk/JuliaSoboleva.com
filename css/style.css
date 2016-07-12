@@ -33,6 +33,7 @@ header nav ul li:last-child {
   padding: 0;
 }
 main .container-fluid {
+  max-width: 1300px;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -52,7 +53,9 @@ main .container-fluid .scale:hover img {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
-main .container-fluid img.photo {
+main .container-fluid .photo {
+  max-width: 100%;
+  height: auto;
   margin: 3px;
 }
 main .container-fluid iframe {

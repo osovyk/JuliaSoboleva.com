@@ -40,6 +40,7 @@ header {
 }
 main {
   .container-fluid {
+    max-width: 1300px;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -60,7 +61,9 @@ main {
       -webkit-transform: scale(1.1);
       transform: scale(1.1);
     }
-    img.photo {
+    .photo {
+      max-width: 100%;
+      height: auto;
       margin: 3px;
     }
     iframe {
