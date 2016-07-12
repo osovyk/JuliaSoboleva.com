@@ -10,59 +10,69 @@ body {
 
 header {
   padding-top: 76px;
-  img {
-
-  }
   nav {
     margin-top: 40px;
     align-items: center;
-  }
-  ul {
-    padding-left: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-
-  }
-  li {
-    list-style-type: none;
-    padding-right: 20px;
-  }
-  li:last-child {
-    padding: 0;
-  }
-  a {
-    text-transform: uppercase;
-    color: #797878;
-    font-size: 16px;
-    padding-bottom: 5px;
-  }
-  a:hover {
-    text-decoration: none;
-    color: #020202;
-    border-bottom: 2px solid #020202;
+    ul {
+      padding-left: 0;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      li {
+        list-style-type: none;
+        padding-right: 20px;
+        a {
+          text-transform: uppercase;
+          color: #797878;
+          font-size: 16px;
+          padding-bottom: 5px;
+        }
+        a:hover {
+          text-decoration: none;
+          color: #020202;
+          border-bottom: 2px solid #020202;
+        }
+      }
+      li:last-child {
+        padding: 0;
+      }
+    }
   }
 }
-
 main {
   .container-fluid {
     display: flex;
-    flex-direction: column;
+    flex-flow: row wrap;
+    justify-content: center;
     align-items: center;
-    a {
-
-      img {
-        margin-bottom: 15px;
-
+    .scale {
+      margin-bottom: 15px;
+      position: relative;
+      overflow: hidden;
+      a {
+        img {
+          -moz-transition: all 0.3s;
+          -webkit-transition: all 0.3s;
+          transition: all 0.3s;
+        }
       }
     }
-    a:hover {
-
+    .scale:hover img{
+      -moz-transform: scale(1.1);
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
+    }
+    .text-xs-center {
+      img {
+        margin-bottom: 5px;
+      }
     }
   }
+
 }
 
 footer {
+  text-align: center;
   a {
     color: #797878;
     margin-right: 10px;
@@ -73,5 +83,16 @@ footer {
   a:hover {
     color: #020202;
   }
+  p {
+    text-transform: capitalize;
+    a {
+      text-decoration: none;
+      color: #797878;
+      padding: 5px;
+    }
+    a:hover {
+      color: #020202;
+      border-bottom: 2px solid #020202;
+    }
+  }
 }
-

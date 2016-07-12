@@ -9,37 +9,56 @@ header nav {
   margin-top: 40px;
   align-items: center;
 }
-header ul {
+header nav ul {
   padding-left: 0;
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
-header li {
+header nav ul li {
   list-style-type: none;
   padding-right: 20px;
 }
-header li:last-child {
-  padding: 0;
-}
-header a {
+header nav ul li a {
   text-transform: uppercase;
   color: #797878;
   font-size: 16px;
   padding-bottom: 5px;
 }
-header a:hover {
+header nav ul li a:hover {
   text-decoration: none;
   color: #020202;
   border-bottom: 2px solid #020202;
 }
+header nav ul li:last-child {
+  padding: 0;
+}
 main .container-fluid {
   display: flex;
-  flex-direction: column;
+  flex-flow: row wrap;
+  justify-content: center;
   align-items: center;
 }
-main .container-fluid a img {
+main .container-fluid .scale {
   margin-bottom: 15px;
+  position: relative;
+  overflow: hidden;
+}
+main .container-fluid .scale a img {
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+main .container-fluid .scale:hover img {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+main .container-fluid .text-xs-center img {
+  margin-bottom: 5px;
+}
+footer {
+  text-align: center;
 }
 footer a {
   color: #797878;
@@ -50,4 +69,16 @@ footer a:visited {
 }
 footer a:hover {
   color: #020202;
+}
+footer p {
+  text-transform: capitalize;
+}
+footer p a {
+  text-decoration: none;
+  color: #797878;
+  padding: 5px;
+}
+footer p a:hover {
+  color: #020202;
+  border-bottom: 2px solid #020202;
 }
