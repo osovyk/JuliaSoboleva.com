@@ -1,5 +1,8 @@
 body {
   font-family: 'Arimo', sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 header {
   padding-top: 76px;
@@ -32,11 +35,15 @@ header nav ul li a:hover {
 header nav ul li:last-child {
   padding: 0;
 }
+main {
+  flex: 1;
+}
 main .container-fluid {
   max-width: 1300px;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+  align-items: flex-start;
 }
 main .container-fluid .scale {
   margin-bottom: 15px;
@@ -53,15 +60,16 @@ main .container-fluid .scale:hover img {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
-main .container-fluid .photo {
-  max-width: 100%;
-  height: auto;
-  margin: 3px;
-}
 main .container-fluid iframe {
   margin: 5px;
   width: 600px;
   height: 338px;
+}
+main .container-fluid .photo {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 3px;
 }
 footer {
   margin-top: 10px;

@@ -4,6 +4,9 @@
 
 body {
   font-family: 'Arimo', sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 
@@ -39,11 +42,13 @@ header {
   }
 }
 main {
+  flex: 1;
   .container-fluid {
     max-width: 1300px;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
+    align-items: flex-start;
     .scale {
       margin-bottom: 15px;
       position: relative;
@@ -61,15 +66,16 @@ main {
       -webkit-transform: scale(1.1);
       transform: scale(1.1);
     }
-    .photo {
-      max-width: 100%;
-      height: auto;
-      margin: 3px;
-    }
     iframe {
       margin: 5px;
       width: 600px;
       height: 338px;
+    }
+    .photo {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      margin: 3px;
     }
   }
 }
