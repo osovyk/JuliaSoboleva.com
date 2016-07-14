@@ -75,16 +75,15 @@ footer {
   margin-top: 10px;
   text-align: center;
 }
-footer a {
+footer .social-icons a {
   text-decoration: none;
   color: #797878;
-  margin-right: 10px;
 }
-footer a:visited {
+footer .social-icons a:visited {
   color: #797878;
   text-decoration: none;
 }
-footer a:hover {
+footer .social-icons a:hover {
   text-decoration: none;
   color: #020202;
 }
