@@ -13,6 +13,7 @@ header nav.row {
 }
 header nav.row ul {
   padding-left: 0;
+  padding-right: 0;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -38,34 +39,34 @@ header nav.row ul li:last-child {
 main {
   flex: 1;
 }
-main .container {
+main .container-fluid .row {
   max-width: 1300px;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   align-items: flex-start;
 }
-main .container .scale {
+main .container-fluid .row .scale {
   margin-bottom: 15px;
   position: relative;
   overflow: hidden;
 }
-main .container .scale a img {
+main .container-fluid .row .scale a img {
   -moz-transition: all 0.3s;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
-main .container .scale:hover img {
+main .container-fluid .row .scale:hover img {
   -moz-transform: scale(1.1);
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
-main .container iframe {
+main .container-fluid .row iframe {
   margin: 3px;
   width: 600px;
   height: 338px;
 }
-main .container .photo {
+main .container-fluid .row .photo {
   display: block;
   max-width: 100%;
   height: auto;
