@@ -7,32 +7,32 @@ body {
 header {
   padding-top: 76px;
 }
-header nav {
+header nav.row {
   margin-top: 40px;
   align-items: center;
 }
-header nav ul {
+header nav.row ul {
   padding-left: 0;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
 }
-header nav ul li {
+header nav.row ul li {
   list-style-type: none;
   padding-right: 20px;
 }
-header nav ul li a {
+header nav.row ul li a {
   text-transform: uppercase;
   color: #797878;
   font-size: 16px;
   padding-bottom: 5px;
 }
-header nav ul li a:hover {
+header nav.row ul li a:hover {
   text-decoration: none;
   color: #020202;
   border-bottom: 2px solid #020202;
 }
-header nav ul li:last-child {
+header nav.row ul li:last-child {
   padding: 0;
 }
 main {
