@@ -1,0 +1,29 @@
+@main-col: #797878;
+@hover-col: #020202;
+
+.link {
+  color: @main-col;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding-bottom: 5px;
+}
+.link-hover {
+  color: @hover-col;
+  border-bottom: 2px solid @hover-col;
+}
+
+.transition (@transition) {
+  -webkit-transition: all @transition;
+  -moz-transition: all @transition;
+  -o-transition: all @transition;
+  transition: all @transition;
+}
+
+.transform (@transform) {
+  -webkit-transform: scale(@transform);
+  -moz-transform: scale(@transform);
+  -o-transform: scale(@transform);
+  transform: scale(@transform);
+}
+
+

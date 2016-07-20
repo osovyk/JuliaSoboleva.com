@@ -1,3 +1,13 @@
+.link {
+  color: #797878;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding-bottom: 5px;
+}
+.link-hover {
+  color: #020202;
+  border-bottom: 2px solid #020202;
+}
 body {
   font-family: 'Arimo', sans-serif;
   display: flex;
@@ -22,13 +32,12 @@ header nav.row ul li {
   padding-right: 20px;
 }
 header nav.row ul li a {
-  text-transform: uppercase;
   color: #797878;
-  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
   padding-bottom: 5px;
 }
 header nav.row ul li a:hover {
-  text-decoration: none;
   color: #020202;
   border-bottom: 2px solid #020202;
 }
@@ -51,13 +60,15 @@ main .container .scale {
   overflow: hidden;
 }
 main .container .scale a img {
-  -moz-transition: all 0.3s;
   -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
   transition: all 0.3s;
 }
 main .container .scale:hover img {
-  -moz-transform: scale(1.1);
   -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
   transform: scale(1.1);
 }
 main .container iframe {
@@ -98,7 +109,6 @@ footer p a.dev {
 }
 footer p a.dev:hover {
   color: #020202;
-  border-bottom: 2px solid #020202;
 }
 footer #back-top {
   position: fixed;
@@ -108,9 +118,10 @@ footer #back-top {
 footer #back-top a {
   color: #797878;
   display: block;
-  -webkit-transition: 1s;
-  -moz-transition: 1s;
-  transition: 1s;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
 }
 footer #back-top a:hover {
   color: #020202;

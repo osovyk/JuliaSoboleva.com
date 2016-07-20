@@ -1,6 +1,4 @@
-@import "variable.less";
 @import "mixin.less";
-
 
 body {
   font-family: 'Arimo', sans-serif;
@@ -23,15 +21,10 @@ header {
         list-style-type: none;
         padding-right: 20px;
         a {
-          text-transform: uppercase;
-          color: #797878;
-          font-size: 16px;
-          padding-bottom: 5px;
+          .link;
         }
         a:hover {
-          text-decoration: none;
-          color: #020202;
-          border-bottom: 2px solid #020202;
+          .link-hover;
         }
       }
       li:last-child {
@@ -54,16 +47,12 @@ main {
       overflow: hidden;
       a {
         img {
-          -moz-transition: all 0.3s;
-          -webkit-transition: all 0.3s;
-          transition: all 0.3s;
+          .transition (0.3s);
         }
       }
     }
     .scale:hover img{
-      -moz-transform: scale(1.1);
-      -webkit-transform: scale(1.1);
-      transform: scale(1.1);
+      .transform (1.1);
     }
     iframe {
       margin: 3px;
@@ -85,15 +74,15 @@ footer {
   .social-icons {
     a {
       text-decoration: none;
-      color: #797878;
+      color: @main-col;
     }
     a:visited {
-      color: #797878;
+      color: @main-col;
       text-decoration: none;
     }
     a:hover {
       text-decoration: none;
-      color: #020202;
+      color: @hover-col;
     }
   }
   p {
@@ -101,12 +90,11 @@ footer {
     text-transform: capitalize;
     a.dev {
       text-decoration: none;
-      color: #797878;
+      color: @main-col;
       padding: 5px;
     }
     a.dev:hover {
-      color: #020202;
-      border-bottom: 2px solid #020202;
+      color: @hover-col;
     }
   }
   #back-top {
@@ -116,9 +104,7 @@ footer {
     a {
       color: #797878;
       display: block;
-      -webkit-transition: 1s;
-         -moz-transition: 1s;
-              transition: 1s;
+      .transition (1s)
     }
     a:hover {
       color: #020202;
