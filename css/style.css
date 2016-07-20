@@ -12,7 +12,7 @@ header nav.row {
   align-items: center;
 }
 header nav.row ul {
-  padding-left: 0;
+  padding: 0;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
