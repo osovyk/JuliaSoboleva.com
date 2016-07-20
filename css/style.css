@@ -100,3 +100,18 @@ footer p a.dev:hover {
   color: #020202;
   border-bottom: 2px solid #020202;
 }
+footer #back-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+}
+footer #back-top a {
+  color: #797878;
+  display: block;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  transition: 1s;
+}
+footer #back-top a:hover {
+  color: #020202;
+}
