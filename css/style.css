@@ -39,7 +39,7 @@ main {
   flex: 1;
 }
 main .container {
-  max-width: 1300px;
+  max-width: 1050px;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
